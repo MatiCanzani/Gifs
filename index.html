@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Sass/sailor-day.css" id="css-style">
+    <script src="./js/scripts.js" defer></script>
+    <title>GifOS</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+            </div>
+            <div class="container-header-home">
+                <a href="./index.html"><img class="logo" src="./assets/gifOF_logo.png" alt="logo"></a>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <button onclick="location.href = './upload.html'" class="button-menu1">Crear Guifos</button>
+                        </li>
+                        <li>
+                            <ul class="switch">
+                                <li>
+                                    <div class="dropdown-container">
+                                        <button onclick="showDropdown()" class="button-menu2">Elegir
+                                            tema</button>
+                                        <button onclick="showDropdown()" class="button-menu3"><img
+                                                src="./assets/dropdown.svg" alt="dropdown"></button>
+                                    </div>
+                                    <div id="nav-dropdown" class="dropdown">
+                                        <ul>
+                                            <li><button onclick="changeSailorDay()"
+                                                    class="btn-switch">Sailor-Day</button>
+                                            </li>
+                                            <li><button onclick="chageSailorNight()"
+                                                    class="btn-switch">Sailor-Night</button></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="My-Gifos">
+                            <a href="#" onclick="myGifOs()"><p><span>M</span>is Guifos</p></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <main class="main-container">
+            <div id="mainsGifs">
+                <section class="search-cntr">
+                    <div class="search-top-bar">
+                        <p>Buscar</p>
+                    </div>
+                    <div class="search-area">
+                        <label><input oninput="validateSearch()" id="search-input"
+                                class="search-box" type="text"
+                                placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"></label>
+                        <button onclick="renderTrending()" id="search" class="loupe"><img
+                                src="./assets/lupa_inactive.svg" alt="lupa">Buscar</button>
+                    </div>
+                </section>
+                <section>
+                    <div id="blue-cntr" class="blue-btn-cntr">
+                    </div>
+                </section>
+                <section id="dropdrown-content" class="serch-button">
+                    <div class="button-cntr">
+                        <ul>
+                            <li onclick='getMoreSuggest()' class="btn-search">
+                                <p>Mr Bean</p>
+                            </li>
+                            <li onclick='getSimilarSuggest()' class="btn-search">
+                                <p>High</p>
+                            </li>
+                            <li onclick='getOneMoreSuggest()' class="btn-search">
+                                <p>Ukulele</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="today">
+                    <p>Hoy te sugerimos:</p>
+                </section>
+                <section>
+                    <div id="day-gif" class="gif-today"></div>
+                </section>
+            </div>
+            <section class="trend">
+                <p id="today-text">Tendencias: </p>
+            </section>
+            <section id="trending" class="gif-cntr">
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

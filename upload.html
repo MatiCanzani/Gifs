@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Sass/sailor-day.css" id="css-style">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./js/video.js" defer></script>
+    <title>Crear Gif</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="container-header-mygif">
+            <a href="./index.html"><img class="arrow" src="./assets/arrow.svg" alt="back arrow"></a>
+            <a href="./index.html"><img class="logo" src="./assets/gifOF_logo.png" alt="logo"></a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section id="startGif" class="create">
+            <div class="grey-box-big">
+                <div class="create-bar">
+                    <p>Crear Guifos</p>
+                </div>
+                <div>
+                    <div class="window">
+                        <img src="./assets/windowimg.png" alt="windows">
+                        <h4>Aquí podrás crear tus propios guifos</h4>
+                    </div>
+                    <div class="window-content">
+                        <p class="guifos">Crear tus <span>guifo</span> es muy fácil, graba cualquier imagen con tu
+                            cámara y obtén
+                            guifos personalizados. Los pasos para crear tu guifo son:</p>
+                        <p><span>1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                        <p><span>2)</span> Capturar tu momento guifo</p>
+                        <p><span>3)</span> Revisar el momento</p>
+                        <p><span>4)</span> Listo para subir y compartir!</p>
+                        <p class="guifos"> ¿Quieres comenzar a crear tu <span>guifo</span> ahora?</p>
+                    </div>
+                    <div id="cap-btn" class='create-btn-cntr'>
+                        <button onclick="location.href = './index.html'" class="button-cancel">Cancelar</button>
+                        <button onclick="startGif()" class="button-menu1">Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gif-creation-cntr">
+            <div class="upload-cntr">
+                <div class="upload-bar">
+                    <p id="upper-text-bar">Un Chequeo Antes de Empezar</p>
+                    <button id="x-btn" class="close-button"></button>
+                </div>
+                <div id="gif-play" class="video">
+                    <video id="video">
+                    </video>
+                    <!-- <img id="prev-gif" class="gif-preview" alt="prev" src=""> -->
+                </div>
+                <div id="cap-cntr" class="capture-btn-cntr">
+                    <button onclick="getStream()" class="button-camera"><img id="camera-icon" src="./assets/camera.svg"
+                            alt=""></button>
+                    <button onclick="capture()" class="button-menu2">Capturar</button>
+                </div>
+                <div id="prev-btn" class="preview-btn-cntr">
+                    <div class="timmer">
+                        <p>00:00:05:35</p>
+                    </div>
+                    <div class="bar-cntr">
+                        <button id="fwd" onclick="playVideo()" class="btn-fwr"><img src="./assets/forward.svg"
+                                alt="foward"></button>
+                        <div class="loading">
+                        </div>
+                    </div>
+                    <div class="capture-cntr">
+                        <button onclick="reCapture()" class="button-menu1">Repetir captura</button>
+                        <button onclick="uploadGif()" class="button-menu1">Subir Gifo</button>
+                    </div>
+                </div>
+
+                <div id="rec-cntr" class="rec-btn-cntr">
+                    <div class="timmer">
+                        <p>00:00:00:00</p>
+                    </div>
+                    <div class="rec-btns">
+                        <button onclick="getStream()" class="rcd-btn-cam"><img src="./assets/recording.svg"
+                                alt="record"></button>
+                        <button id="capture" onclick="stopRec()" class="rcd-btn">Listo</button>
+                    </div>
+                </div>
+                <div id="loading-cntr" class="loading-cntr">
+                    <div class="glob-text"></div>
+                    <img src="./assets/globe_img.png" alt="globe">
+                    <p>Estamos subiendo tu guifo…</p>
+                    <div class="loading-bar">
+                        <p class="text-loading">Tiempo restante: <span>38 años</span> algunos minutos</p>
+                    </div>
+                </div>
+                <div id="cancel-btn" class="preview-btn-cntr">
+                    <button id="cancel" onclick="cancel()" class="button-menu1">Cancelar</button>
+                </div>
+            </div>
+        </section>
+        <section id="ready-cntr" class="ready-cntr">
+            <div class="ready-bar">
+                <p>Guifo Subido Con Éxito</p>
+                <button class="close-button"></button>
+            </div>
+            <div class="upload-sections">
+                <div id="video-done" class="video-done">
+                </div>
+                <div class="btns-done">
+                    <p>Guifo creado con éxito</p>
+                    <button id="copy" class="button-cancel">Copiar Enlace Guifo</button>
+                    <button id="download-btn" class="button-cancel" onclick="downloadGif()">Descargar Guifo</button>
+                </div>
+            </div>
+            <div id="done-btn" class="done-btn-cntr">
+                <button id="done" class="button-menu1" onclick="startAgain()">Listo</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

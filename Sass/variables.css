@@ -1,0 +1,433 @@
+.gif-cntr-trend .gif-down-bar {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%); }
+
+.search-box {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6 inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6 inset 2px 2px 0 0 #000000; }
+
+.button-cntr ul li p, .window-content .guifos, .glob-text p, .btns-done p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px; }
+
+.gif-cntr-trend .gif-down-bar p, .more, .blue-button {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+  font-family: "Chakra Petch", sans-serif;
+  margin-top: 3px;
+  margin-left: 7px; }
+
+.container-header-mygif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+  margin-left: 91px; }
+
+.search-area {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 39px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.main-container {
+  width: 1200px;
+  margin-left: 100px;
+  margin-top: 19px;
+  position: absolute; }
+
+.container {
+  width: 100vw;
+  height: 100vh; }
+
+.gif-cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.gif-cntr-trend .gif-down-bar {
+  font-weight: bold;
+  width: 286px;
+  height: 24px;
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 0px;
+  overflow: hidden;
+  display: none; }
+.gif-cntr-trend img:hover + .gif-down-bar {
+  display: block; }
+
+.gif-small {
+  height: 296px;
+  width: 286px;
+  margin-top: 15px; }
+
+.single-gif {
+  height: 280px;
+  width: 280px; }
+
+.today-gif-cntr {
+  height: 280px;
+  width: 280px;
+  margin-top: 29px;
+  margin-left: 4px;
+  position: absolute; }
+
+.gif-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 284px;
+  width: 100%; }
+
+.create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 287px; }
+
+.close-button {
+  width: 18px;
+  height: 16px;
+  margin: 3px 6px;
+  background-image: url(../assets/close.svg); }
+
+.search-box {
+  width: 1047px;
+  height: 48px;
+  margin-left: 12px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-left: 1rem;
+  font-family: "Chakra Petch", sans-serif; }
+
+.button-cntr {
+  height: 160px; }
+  .button-cntr ul {
+    margin-left: 17px;
+    margin-bottom: 16px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-content: center; }
+    .button-cntr ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-align: left;
+      list-style: none; }
+      .button-cntr ul li p {
+        text-align: left;
+        font-size: 16px;
+        margin-left: 16px;
+        line-height: 22px;
+        margin-top: 6px; }
+
+.more {
+  width: 81px;
+  height: 34px;
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  margin-left: 18px;
+  margin-top: 231px;
+  text-align: center;
+  line-height: 18px;
+  position: relative; }
+  .more:hover {
+    background: #3a72db; }
+
+.blue-button {
+  height: 34px;
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+  height: 34px;
+  padding-left: 7px;
+  padding-right: 12px;
+  cursor: pointer; }
+  .blue-button:hover {
+    background: #3a72db; }
+
+.window {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 25px; }
+  .window h4 {
+    margin-left: 16px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
+    color: #110038;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px; }
+
+.window-content {
+  margin-top: 7px;
+  margin-left: 73px; }
+  .window-content .guifos {
+    line-height: 20px; }
+    .window-content .guifos span {
+      font-style: italic; }
+  .window-content p {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 2.5; }
+  .window-content span {
+    font-weight: bold; }
+
+.create-btn-cntr {
+  margin-left: 334px;
+  margin-top: 28px;
+  position: absolute; }
+
+.capture-btn-cntr {
+  display: block;
+  margin-top: 496px;
+  margin-left: 670px;
+  position: absolute; }
+
+.preview-btn-cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  margin-top: 496px;
+  margin-left: 11px;
+  position: absolute; }
+
+.rec-btn-cntr {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 493px;
+  margin-left: 11px;
+  position: absolute; }
+
+.rec-btns {
+  margin-left: 663px; }
+
+.timmer {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  width: 124px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0px;
+  position: absolute; }
+  .timmer p {
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px; }
+
+#capture {
+  font-size: 16px;
+  line-height: 18px; }
+
+#record {
+  font-size: 16px;
+  line-height: 18px; }
+
+.gif-preview {
+  width: 832px;
+  height: 434px; }
+
+.loading-cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 174px;
+  margin-left: 310.5px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  visibility: hidden; }
+
+.glob-text img {
+  width: 48px;
+  height: 48px; }
+
+.text-loading {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px; }
+  .text-loading span {
+    text-decoration: line-through; }
+
+#cancel {
+  margin-left: 543px;
+  margin-top: 12px; }
+
+.video-done {
+  height: 191px;
+  width: 365px;
+  background: #ffffff;
+  border: 1px solid #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000; }
+  .video-done img {
+    height: 191px;
+    width: 365px; }
+
+.btns-done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 24px; }
+  .btns-done p {
+    margin-bottom: 16px;
+    font-weight: bold; }
+  .btns-done button {
+    width: 256px; }
+
+#copy {
+  margin-bottom: 14px; }
+
+#video {
+  width: 832;
+  height: 434; }
+
+.upload-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 54px;
+  margin-left: 24px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.done-btn-cntr {
+  margin-top: 311px;
+  margin-left: 511px;
+  position: absolute; }
+
+#done {
+  width: 144px; }
+
+#gif-creation-cntr {
+  display: none; }
+
+.loading {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+          box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+  width: 240px;
+  height: 24px;
+  margin-left: 26px;
+  position: absolute; }
+
+.bar-cntr {
+  margin-left: 159px;
+  margin-top: 8px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.capture-cntr {
+  margin-left: 542px; }
+
+/*# sourceMappingURL=variables.css.map */
